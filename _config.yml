@@ -1,0 +1,47 @@
+# Site
+name: "Low Fodmap Feasts"
+title: "Low Fodmap Feasts"
+description: "Low Fodmap Feasts is the place to find delicious low fodmap recipes"
+meta_description: "Low Fodmap Feasts is the place to find delicious low fodmap recipes"
+logo: 'assets/images/logo.svg'
+footerlogo: 'assets/images/logowhite.svg'
+favicon: 'assets/images/favicon.png'
+baseurl: ''
+google_analytics: ''
+instagram: 'https://www.instagram.com/lowfodmapfeasts/'
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  iolanda:
+    name: Iolanda
+    display_name: Iolanda
+    gravatar: 1310a9807a3651fb6cdcca84dd31124e
+    email: iolanda@lowfodmapfeasts.com
+    web: https://lowfodmapfeasts.com
+    description: "Iolanda is the founder of Low Fodmap Feasts"
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+highlighter: rouge
